@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APP后台管理</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_558954_qxhhek3cvr3haor.css">
+    <link rel="stylesheet" href="{CSS_PATH}bootstrap.min.css">
+    <link rel="stylesheet" href="{CSS_PATH}manger.css">
+    <script src="{JS_PATH}jquery-3.2.1.js"></script>
+    <script src="{JS_PATH}bootstrap.min.js"></script>
+</head>
+<body>
+<div class="leftNav">
+    <div class="logo">
+        <img src="{IMG_PATH}bg-logo.png" alt="">
+    </div>
+    <h5>分类管理 <i class="iconfont r">&#xe6a6;</i></h5>
+    <ul>
+        <li><a href="/profect/index.php/catemanage/index"><i class="iconfont a-i">&#xe69e;</i>添加/删除/修改</a></li>
+        <li><a href="/profect/index.php/catemanage/show"><i class="iconfont a-i">&#xe68e;</i>展示</a></li>
+    </ul>
+    <h5>店铺管理<i class="iconfont ">&#xe6a6;</i></h5>
+    <ul>
+        <li><a href="/profect/index.php/boss"><i class="iconfont a-i">&#xe69e;</i>添加/删除/修改</a></li>
+        <li><a href=""><i class="iconfont a-i">&#xe68e;</i>展示</a></li>
+    </ul>
+    <h5>商品管理 <i class="iconfont ">&#xe6a6;</i></h5>
+    <ul>
+        <li><a href="/profect/index.php/goods"><i class="iconfont a-i">&#xe69e;</i>添加/删除/修改</a></li>
+        <li><a href="/profect/index.php/goods/show"><i class="iconfont a-i">&#xe68e;</i>展示</a></li>
+    </ul>
+    <h5>购物车管理<i class="iconfont ">&#xe6a6;</i></h5>
+    <ul>
+        <li><a href="" target="content"><i class="iconfont a-i">&#xe69e;</i>添加/删除/修改</a></li>
+        <li><a href=""><i class="iconfont a-i">&#xe68e;</i>展示</a></li>
+    </ul>
+    <h5>我的管理<i class="iconfont r">&#xe6a6;</i></h5>
+    <ul>
+        <li><a href="" target="content"><i class="iconfont a-i">&#xe69e;</i>添加/删除/修改</a></li>
+        <li><a href=""><i class="iconfont a-i">&#xe68e;</i>展示</a></li>
+    </ul>
+    <h5>推荐管理<i class="iconfont r">&#xe6a6;</i></h5>
+    <ul>
+        <li><a href=""><i class="iconfont a-i">&#xe69e;</i>添加/删除/修改</a></li>
+        <li><a href=""><i class="iconfont a-i">&#xe68e;</i>展示</a></li>
+    </ul>
+</div>
+<script>
+    $(function () {
+        $('h5').on('click', function () {
+            $(this).next('ul').slideToggle(500);
+        });
+    })
+</script>

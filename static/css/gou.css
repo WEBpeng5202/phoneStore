@@ -1,0 +1,436 @@
+/*
+* @Author: asus
+* @Date:   2017-11-16 00:04:53
+* @Last Modified by:   asus
+* @Last Modified time: 2017-11-16 19:54:34
+*/
+* {
+    font-family: "苹方";
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+body {
+    margin: 0;
+}
+
+input, ul, li, p, h1, em, i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.top {
+    width: 100%;
+    height: auto;
+    padding: 0.2rem 0.28rem;
+    border-bottom: 0.01rem solid #efefef;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #3e3e3e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.top h1 {
+    font-size: 0.32rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0.08rem;
+    float: left;
+}
+
+.top .goback, .search {
+    font-size: 0.4rem;
+    float: left;
+    font-weight: 600;
+    color: #fff;
+}
+
+section {
+    padding-top: 1rem;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.item {
+    width: 100%;
+    height: auto;
+}
+
+.item li {
+    border-bottom: 1px solid #f6f6f6;
+    padding: .24rem 0;
+    overflow: hidden;
+}
+
+.item li > .choose {
+    width: 0.6rem;
+    height: 1.8rem;
+    padding: 0 .2rem;
+    float: left;
+    position: relative;
+}
+
+.choose label {
+    width: 100%;
+    height: .4rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.check {
+    width: .4rem;
+    height: .4rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: none;
+    opacity: 0;
+}
+
+.checkInput {
+    color: rgb(157, 232, 247);
+    display: inline-block;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 16px;
+}
+
+.check + .checkInput:after {
+    border-radius: 100%;
+    content: "\e65f";
+    font-size: .34rem;
+    display: block;
+}
+
+.check:checked + .checkInput:after {
+    background-color: #fff;
+    border-radius: 100%;
+    padding: .01rem;
+    box-sizing: border-box;
+    content: "\e75d";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.item li > a {
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: .2rem;
+    border: 1px solid #eee;
+    background: rgba(140, 140, 140, 0.1);
+    border-radius: 2px;
+    float: left;
+}
+
+.item li > .con {
+    width: 4.4rem;
+    height: auto;
+    float: right;
+}
+
+.item li > .con .name {
+    font-size: .28rem;
+    font-weight: 400;
+    line-height: .32rem;
+    color: #3e3e3e;
+    margin-bottom: .12rem;
+    margin-right: .3rem;
+}
+
+.item li > .con .price {
+    font-size: .24rem;
+    color: #999;
+    margin-bottom: .12rem;
+    letter-spacing: normal;
+}
+
+.item li > .con .price span:before {
+    content: '￥';
+    font-size: .24rem;
+    color: #ff6700;
+}
+
+.item li > .con .price span {
+    margin-right: .1rem;
+    font-size: .3rem;
+    color: #ff6700;
+}
+
+.item li > .con .price del:before {
+    content: '￥';
+    font-size: .2rem;
+}
+
+.item li > .con .price del {
+}
+
+.item li > .con .num {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.item li > .con .num .number {
+    overflow: hidden;
+    width: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+}
+
+.input-sub {
+    width: .6rem;
+    height: .6rem;
+    text-align: center;
+    float: left;
+}
+
+.input-sub i {
+    opacity: .3;
+    display: block;
+    width: .6rem;
+    height: .6rem;
+    line-height: .6rem;
+}
+
+.input-num {
+    border: 1px solid rgb(157, 232, 247);
+    max-width: .4rem;
+    margin: 0 .12rem;
+    line-height: .6rem;
+    text-align: center;
+    font-size: .32rem;
+    float: left;
+}
+
+.input-num input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: .6rem;
+    font-size: .32rem;
+}
+
+.input-add {
+    width: .6rem;
+    height: .6rem;
+    text-align: center;
+    float: left;
+}
+
+.input-add i {
+    display: block;
+    width: .6rem;
+    height: .6rem;
+    line-height: .6rem;
+}
+
+.item li > .con .num .del {
+    float: right;
+    margin-right: .1rem;
+    width: .6rem;
+    height: .6rem;
+    line-height: .6rem;
+    padding-top: .06rem;
+    box-sizing: border-box;
+}
+
+.item li > .con .num .del .icon {
+    line-height: .6rem;
+    width: 80%;
+    height: 80%;
+}
+
+.point {
+    padding: .2rem .3rem;
+    width: 100%;
+    height: auto;
+}
+
+.point p {
+    font-size: 0.22rem;
+    color: #999;
+}
+
+.title {
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: .1rem 0;
+}
+
+.title div {
+    font-size: 0.24rem;
+    color: #FB984C;
+    text-align: center;
+    padding: .08rem 0;
+}
+
+.title div:first-child {
+    font-size: .3rem;
+    font-weight: 600;
+
+    letter-spacing: .01rem;
+}
+
+.title div:nth-child(2) {
+    font-size: 0.24rem;
+    color: #929292;
+    text-align: center;
+    /* float: left; */
+}
+
+.list {
+    width: 100%;
+    height: auto;
+}
+
+.list ul {
+    overflow: auto;
+}
+
+.list li {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: .04rem;
+    float: right;
+
+}
+
+.list img {
+    width: 100%;
+    height: 3.7rem;
+}
+
+.list .info {
+    width: 100%;
+    height: auto;
+    padding: 0.18rem 0.27rem;
+    box-sizing: border-box;
+}
+
+.list .info .one {
+    font-size: 0.28rem;
+    color: rgba(0, 0, 0, .87);
+}
+
+.list .info .two {
+    font-size: .32rem;
+    color: #ff6000;
+    margin-top: 0.05rem;
+
+}
+
+.list .info .two::before {
+    display: inline-block;
+    content: "¥";
+    font-size: 0.2rem;
+    vertical-align: top;
+    font-weight: 400;
+}
+
+.list .info .two del {
+    font-size: .22rem;
+    color: rgba(0, 0, 0, .6);
+}
+
+.list .info .two span {
+    font-size: .22rem;
+    color: #ff6000;
+}
+
+/* 底部 */
+.footer {
+    width: 100%;
+    height: 1rem;
+    background-color: rgba(0, 0, 0, 0.48);
+    border-radius: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .content {
+    width: 33.333%;
+    height: 100%;
+    font-size: .26rem;
+    color: #999;
+    text-align: center;
+    padding-top: .15rem;
+    border-radius: 1rem;
+}
+
+.footer .content strong {
+    font-size: .4rem;
+    color: #ff5722;
+    margin-right: .2em;
+}
+
+.footer .btn {
+    display: block;
+    width: 33.333%;
+    height: 100%;
+    font-size: .28rem;
+    color: #333;
+    text-align: center;
+    line-height: 1rem;
+    background: #f6f6f6;
+    border-radius: 1rem;
+}
+
+.footer .buy {
+    border-radius: 1rem;
+    display: block;
+    width: 33.333%;
+    height: 100%;
+    background: #F56A00;
+    font-size: .28rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1rem;
+}

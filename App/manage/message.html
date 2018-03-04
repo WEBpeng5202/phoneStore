@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/profect/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/profect/static/css/message.css">
+</head>
+<body>
+<div class="panel panel-success box">
+    <div class="panel-heading title">
+        <?php
+        echo $message;
+?>
+    </div>
+    <div class="panel-body">
+        <span>5</span> s 后返回上一级页面     <a href="/profect/index.php">立即返回</a>
+    </div>
+
+</div>
+</body>
+</html>
+<script>
+    window.onload=function () {
+        let num=5;
+        let url=document.querySelector('a').href;
+        console.log(url);
+        let spans=document.querySelector('span');
+        let timer=setInterval(function () {
+            if (num==1){
+                clearInterval(timer);
+                location.href=url;
+
+            }
+            spans.innerText=--num;
+        },1000)
+
+    }
+</script>

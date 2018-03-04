@@ -1,0 +1,108 @@
+/*样式重置*/
+.adr-list-wrap::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/*样式重置*/
+
+
+
+.top{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    height: .8rem;
+    background: #080808;
+    font-size: .28rem;
+    color: #fff;
+    text-align: center;
+    line-height: .8rem;
+}
+.top .back{
+    width: 20%;
+}
+.top .back a{
+    color: #fff;
+}
+.top .title{
+    width: 60%;
+}
+.adr-list-wrap{
+    width: 100%;
+    padding: .8rem 4% .1rem;
+}
+
+.adr-list{
+    width: 100%;
+    padding: 0 4%;
+    border: 1px solid #eee;
+}
+.adr-list{
+
+}
+.cont{
+    width: 100%;
+    font-size: .24rem;
+    line-height: .8rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    border-bottom: 1px solid #eee;
+}
+.cont .names{
+    width: 25%;
+    text-align: left;
+    font-weight: 600;
+    color: #ff6700;
+}
+.cont .tel{
+    letter-spacing: .01rem;
+    text-align: left;
+    width: 40%;
+}
+.cont .del{
+    text-align: right;
+    width: 25%;
+}
+.cont .del .iconfont{
+    font-size: .3rem;
+    color: #2b2b36;
+}
+.adr-info{
+    width: 100%;
+    padding: .1rem 0;
+    line-height: .4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.adr-city{
+    width: 80%;
+}
+.adr-edit{
+    display: block;
+    width: 10%;
+}
+.adr-add{
+    width: 100%;
+    height: .8rem;
+    background: #ff6700;
+    text-align: center;
+    line-height: .8rem;
+    position: fixed;
+    bottom: 0;
+}
+.adr-add a{
+    font-size: .3rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+.space-bottom{
+    height: .8rem;
+}

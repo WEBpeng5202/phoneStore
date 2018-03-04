@@ -1,0 +1,125 @@
+body{
+	font-size: .2rem;
+	font-family: "苹方";
+}
+ul,li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.login{
+	width:100%;
+}
+.login .top{
+	margin-top: .88rem;
+	width: 100%;
+	height: 4rem;
+}
+.login .top ul{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.login .top ul li{
+	width: 100%;
+	position: absolute;
+	top: 0;
+
+}
+.login .top ul li img{
+	width: 100%;
+}
+.login .bottom{
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+input[type="text"]{
+	display: block;
+	padding: .16rem 0;
+	margin: 0;
+	width: 5.44rem;
+	padding: .16rem;
+	border: none;
+	border-bottom: .02rem solid #eee;
+	outline: none;
+	font-size: .28rem;
+	font-weight: 500;
+}
+input[type="password"]{
+	display: block;
+	padding: .16rem 0;
+	margin: .2rem 0;
+	width: 5.44rem;
+	padding: .16rem;
+	border: none;
+	border-bottom: .02rem solid #eee;
+	outline: none;
+	font-size: .28rem;
+	font-weight: 500;
+	font-family: "苹方";
+}
+input[type="button"]{
+	width: 5.76rem;
+	height: .88rem;
+	font-size: .34rem;
+	color: #fff;
+	font-family: "苹方";
+	font-weight: 500;
+	background: #ff6700;
+	border:none;
+	border-radius: .1rem;
+	outline: none;
+}
+input::-webkit-input-placeholder {
+	font-weight: 500;
+	font-family: "苹方";
+}
+.zc{
+	display: flex;
+	justify-content: space-between;
+	padding: .28rem .3rem;
+}
+.zc a{
+	font-size: .24rem;
+	color: #979797;
+}
+.dsf{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: .3rem;
+	text-align: center;
+}
+.dsf a{
+	font-size: .24rem;
+	color: #979797;
+	display: block;
+	width: 33%;
+}
+.dsf a i{
+	font-size: .3rem;
+	margin-right: .1rem;
+}
+.dsf a:nth-child(2){
+	border-left:.02rem solid #979797; 
+	border-right:.02rem solid #979797; 
+	display: block;
+	width: 34%;
+	text-align: center;
+}
+.back{
+	position: absolute;
+	left: .4rem;
+	top: .4rem;
+	font-size: .34rem;
+	color: #979997;
+	display: block;
+	width: .3rem;
+	height: .3rem;
+}

@@ -1,0 +1,90 @@
+.top{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+    height: .8rem;
+    background: #080808;
+    font-size: .28rem;
+    color: #fff;
+    text-align: center;
+    line-height: .8rem;
+}
+.top .back{
+    width: 20%;
+}
+.top .back a{
+    color: #fff;
+}
+.top .title{
+    width: 60%;
+}
+.adr-add{
+    width: 100%;
+    height: .8rem;
+    background: #ff6700;
+    text-align: center;
+    line-height: .8rem;
+    position: fixed;
+    bottom: 0;
+    font-size: .3rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+.adr-select{
+    padding: .1rem .3rem;
+    box-sizing: content-box;
+    overflow: hidden;
+    background: #fff;
+    display: none;
+}
+.adr-content{
+    width: 400%;
+    height: 2rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: 1s;
+    display: flex;
+    justify-content: flex-start;
+}
+.adr-content dl{
+    margin: 0;
+    width: 25%;
+    margin-right: .2rem;
+    display: none;
+}
+.adr-content .adr-c-active{
+    display: block;
+}
+.adr-content dl dd{
+    font-size: .26rem;
+    color: #2b2b36;
+    padding: .14rem 0;
+    line-height: .26rem;
+    border-bottom: 1px solid #EFEFEF;
+}
+.adr-content dl .active{
+    color: #ff6700;
+    font-weight: 600;
+}
+.group-form{
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: .28rem;
+    padding: .1rem .3rem;
+}
+.group-form label{
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #000;
+}
+.group-form input{
+    border: none;
+    outline: none;
+}
+.adr-city input{
+    width: 70%;
+}
